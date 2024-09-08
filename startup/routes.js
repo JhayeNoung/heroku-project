@@ -8,6 +8,7 @@ const returns = require('../routes/returns');
 const error = require('../middlewares/error');
 const auth = require('../middlewares/auth');
 const morgan = require('morgan');
+require('express-async-errors');
 
 module.exports = function(app){
     app.use(express.json());

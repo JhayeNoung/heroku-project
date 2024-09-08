@@ -14,16 +14,13 @@ const logger = winston.createLogger({
         winston.format.timestamp(),
         winston.format.json(),
         winston.format.prettyPrint(),
+        winston.format.colorize(),
     ),
 
     defaultMeta: { service: 'user-service' },
 
     transports: [
-        new winston.transports.Console({
-            format: winston.format.combine(
-                customFormat
-            )
-        })
+        new winston.transports.Console()
     ],
 
     exceptionHandlers: [
@@ -37,6 +34,6 @@ const logger = winston.createLogger({
     ]
 });
 // exitOnError cannot be true with no exception handlers: new winston.transports.Console(), new winston.transports.File(), new winston.transports.DB(),
-logger.exitOnError = false;  
+// logger.exitOnError = false;  
 
 module.exports = logger;

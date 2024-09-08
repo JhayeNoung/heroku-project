@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --verbose --runInBand --detectOpenHandles --testPathIgnorePatterns='integrations/genres.test.js|integrations/users.test.js|integrations/customers.test.js|integrations/movies.test.js|-integrations/rentals.test.js|integrations/returns.test.js|units/models/user.test.js|units/middlewares/auth.test.js' "
+    "test": "jest --watchAll --verbose --runInBand --detectOpenHandles --testPathIgnorePatterns='integrations/genres.test.js|integrations/users.test.js|integrations/customers.test.js|integrations/movies.test.js|-integrations/rentals.test.js|integrations/returns.test.js|units/models/user.test.js|units/middlewares/auth.test.js' ",
+    "start": "node index.js"
   },
   "engines": {
     "node": "22.4.0"
