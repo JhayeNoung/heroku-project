@@ -7,6 +7,7 @@ const auth = require('../middlewares/auth');
 const { default: mongoose } = require('mongoose');
 
 router.get('/', async (req,res)=>{
+    // throw new Error('inject error');
     const movies = await Movie.find();
     res.status(200).send(movies);
 })
