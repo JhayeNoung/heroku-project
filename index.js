@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-const logger = require('./middlewares/logger');
+const {logger, msgLogger} = require('./middlewares/logger');
+const { format } = require('morgan');
 require('express-async-errors');
 
 // we need to pass 'app' to startup/routes module(that is connected to port 3000)
@@ -13,8 +14,9 @@ require('./startup/prob')(app);
  
 // throw new Error('injecting uncaught exception');
 
-logger.info(app.get('env'));
+// you can use an express method get(), to know what enviroment
+msgLogger.info(`Environment - ${app.get('env')}`);
 const port = 3000 || process.env.PORT;
-const server = app.listen(port, ()=>logger.info(`Listening at port ${port}.`));
+const server = app.listen(port, ()=>msgLogger.info(`Listening at port ${port}.`));
 
 module.exports = server;
