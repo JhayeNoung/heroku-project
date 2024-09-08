@@ -1,3 +1,5 @@
 {
+    "db": "mongodb://127.0.0.1:27017/prob-project-vidly",
+    "NODE_ENV": "production",
     "HTTP_PROXY": "http://proxy.server.com:3000"
 }
