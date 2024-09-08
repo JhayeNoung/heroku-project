@@ -9,6 +9,7 @@ require('./startup/routes')(app);
 require('./startup/db')();
 require('./startup/config')();
 require('./startup/prob')(app);
+// require('./startup/atlas')();
 // const p = Promise.reject(new Error("unhandled rejection."));
 // p.then(()=>console.log('OK'));
  

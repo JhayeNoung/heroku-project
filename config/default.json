@@ -1,3 +1,4 @@
 {
-    "NODE_ENV": "development"
+    "db": "mongodb://127.0.0.1:27017/dev-project-vidly",
+    "privateKey": "dev-1234"
 }
