@@ -1,5 +1,3 @@
 {
-    "db": "mongodb+srv://James_Admin:admin@clusterjn.fxx8pr3.mongodb.net/prob-project-vidly",
-    "privateKey": "prob-1234",
     "HTTP_PROXY": "http://proxy.server.com:3000"
 }
