@@ -1,4 +1,5 @@
 {
     "db": "mongodb://127.0.0.1:27017/prob-project-vidly",
-    "privateKey": "prob-1234"
+    "privateKey": "prob-1234",
+    "HTTP_PROXY": "http://proxy.server.com:3000"
 }
