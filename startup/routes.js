@@ -6,7 +6,6 @@ const customers = require('../routes/customers');
 const rentals = require('../routes/rentals');
 const returns = require('../routes/returns');
 const error = require('../middlewares/error');
-const auth = require('../middlewares/auth');
 const morgan = require('morgan');
 require('express-async-errors');
 
@@ -23,5 +22,4 @@ module.exports = function(app){
     app.use('/api/rentals', rentals);
     app.use('/api/returns', returns);
     app.use(error);
-    app.use(auth);
 } 
