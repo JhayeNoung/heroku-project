@@ -16,7 +16,7 @@ require('./startup/prob')(app);
 
 // you can use an express method get(), to know what enviroment
 msgLogger.info(`Environment - ${app.get('env')}`);
-const port = 3000 || process.env.PORT;
-const server = app.listen(port, ()=>msgLogger.info(`Listening at port ${port}.`));
+const PORT = 3000 || process.env.PORT;
+const server = app.listen(PORT, ()=>msgLogger.info(`Listening at port ${PORT}.`));
 
 module.exports = server;
