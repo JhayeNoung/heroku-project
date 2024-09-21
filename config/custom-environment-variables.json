@@ -1,4 +1,4 @@
 {
-    "privateKey": "privateKey",
-    "db": "prob_db"
+    "privateKey": "PROB_PRIVATE_KEY",
+    "db": "PORB_DB"
 }
